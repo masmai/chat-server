@@ -21,7 +21,7 @@ const rooms = { };
 const io = require('socket.io')(require("http").createServer(function (req, res) {
   res.write('Hello World!'); //write a response to the client
   res.end(); //end the response
-}).listen(80));
+}).listen(3000));
 
 
 // noinspection JSUnresolvedFunction
