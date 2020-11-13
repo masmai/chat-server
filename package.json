@@ -4,12 +4,12 @@
     "description": "The server side of FlutterChat",
     "main": "server.js",
     "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1"
+        "start": "node server.js"
     },
     "author": "Frank W. Zammetti",
     "license": "ISC",
     "dependencies": {
-        "socket.io": "^2.2.0"
+        "socket.io": "^2.3.0"
     },
     "devDependencies": {
         "eslint": "^5.15.3"
