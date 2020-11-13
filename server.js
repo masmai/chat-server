@@ -15,13 +15,13 @@ const users = { };
 // noinspection JSUnusedLocalSymbols
 const rooms = { };
 
-
+const port = process.env.PORT || 80;
 // construct an HTTP server, wrapped in an Socket.IO server, and start it up.
 //const io = require("socket.io")(require("http").createServer(function(){}).listen(9000));
 const io = require('socket.io')(require("http").createServer(function (req, res) {
   res.write('Hello World!'); //write a response to the client
   res.end(); //end the response
-}).listen(80));
+}).listen(port));
 
 
 // noinspection JSUnresolvedFunction
